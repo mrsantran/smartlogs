@@ -21,7 +21,7 @@ class AppLog
     {
         $dateFormats = $dateFormats? : $this->dateFormats;
         $outputs = $outputs? : $this->outputs;
-        $filenames = config('smartlogs.log_path') . ($filenames? : config('smartlogs.log_file_name'));
+        $filenames = config('smartlogs.log_path') . "/" . ($filenames? : config('smartlogs.log_file_name'));
         if (config('smartlogs.log') === 'daily') {
             $filenames .= date("-Y-m-d");
         }
