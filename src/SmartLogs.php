@@ -79,7 +79,7 @@ class SmartLogs
             $params = Ultilities::jsonJapan($params);
         }
         $this->getInfo();
-        if ($is_option) {
+        if (!$is_option) {
             $params = $this->client_ip . "," .
                     "USER_ID:" . $this->user_id . "," .
                     $this->path_info . "," . $params;
