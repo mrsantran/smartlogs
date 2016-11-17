@@ -23,7 +23,7 @@ class SmartLogsServiceProvider extends ServiceProvider
     {
         // Publish config files
         $this->publishes([
-            __DIR__ . '/../config/smartlogs.php' => config_path('smartlogs.php'),
+            __DIR__ . '/config/smartlogs.php' => config_path('smartlogs.php'),
         ]);
     }
 
