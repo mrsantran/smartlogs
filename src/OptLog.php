@@ -21,7 +21,7 @@ class OptLog
     {
         $dateFormat = $dateFormat? : $this->dateFormat;
         $output = $output? : $this->output;
-        $filename = config('smartlogs.log_path') . ($filename? : config('smartlogs.log_file_name'));
+        $filename = config('smartlogs.log_path') . "/" . ($filename? : config('smartlogs.log_file_name'));
         if (config('smartlogs.log') === 'daily') {
             $filename .= date("-Y-m-d");
         }
