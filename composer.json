@@ -4,7 +4,7 @@
     "type": "library",
     "require": {
         "php": ">=5.5.9",
-        "monolog/monolog": "2.0.x-dev"
+        "monolog/monolog": "^1.21"
     },
     "autoload": {
         "psr-4": {
