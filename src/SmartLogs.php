@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\Request;
 
 class SmartLogs
 {
+
     private $logApt = null;
     private $logOpt = null;
     private $user_id = null;
@@ -16,6 +17,16 @@ class SmartLogs
     {
         $this->logOpt = new OptLog();
         $this->logApt = new AppLog();
+    }
+
+    public function logRequest()
+    {
+        $params = [
+            "type" => "REQUEST",
+            "params" => Request::all()
+        ];
+        $this->appendParams($params);
+        $this->log("info", $params);
     }
 
     public function startLog($params = "START")
