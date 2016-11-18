@@ -3,6 +3,9 @@ Laravel 5 SmartLogs
 
 [![Total Downloads](https://img.shields.io/packagist/dt/santran/smartlogs.svg)](https://packagist.org/packages/santran/smartlogs)
 
+Log look like
+![preview](https://cloud.githubusercontent.com/assets/21286108/20433981/78479a96-add8-11e6-82c2-64bdc96fbc9b.png)
+
 -----
 The best Log for Laravel 5.2.x and above. **Install with composer**. 
 
