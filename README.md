@@ -63,7 +63,6 @@ SmartLogs::logRequest()     : To write Option log with all Request params
 ```
 
 Features: 
-- Update auto log all Request params
 - Update auto log lastest sql command
 - And more...
 
