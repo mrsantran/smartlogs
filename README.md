@@ -1,7 +1,6 @@
 Laravel 5 SmartLogs
 ======================
 
-TL;DR
 -----
 The best Log for Laravel 5.2.x and above. **Install with composer**. 
 
