@@ -58,6 +58,8 @@ SmartLogs::appWarning($params)  : To write Warning log ($params can be String or
 SmartLogs::appError($params)  : To write Error log ($params can be String or Array)
 
 SmartLogs::optLog($params)  : To write Option log ($params can be String or Array)
+
+SmartLogs::logRequest()     : To write Option log with all Request params
 ```
 
 Features: 
