@@ -1,6 +1,6 @@
 {
     "name": "santran/smartlogs",
-    "description": "Create Smart Logs for Web or API application.",
+    "description": "Create Smart Logs for Laravel 5 Web or API application.",
     "type": "library",
     "require": {
         "php": ">=5.5.9",
