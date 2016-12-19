@@ -2,6 +2,7 @@ Laravel 5 SmartLogs
 ======================
 
 [![Total Downloads](https://img.shields.io/packagist/dt/santran/smartlogs.svg)](https://packagist.org/packages/santran/smartlogs)
+[![Paypal Donate](https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif)](http://paypal.me/MrSanTran)
 
 Log look like
 ![preview](https://cloud.githubusercontent.com/assets/21286108/20433981/78479a96-add8-11e6-82c2-64bdc96fbc9b.png)
