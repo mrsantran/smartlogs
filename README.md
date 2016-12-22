@@ -32,12 +32,13 @@ Publish config file, open console and enter bellow command:
 php artisan vendor:publish
 ```
 Config file 'smartlogs.php' will be copy to config/smartlogs.php, you can change any config on that file for SmartLogs
-- 'log_path'         : Path to save file log
-- 'log'              : Log daily or single file
-- 'log_option_on'    : Enable/Disable Option Log
-- 'log_level_enable' : Level of logs (Have four Level 'DEBUG', 'INFO', 'WARNING', 'ERROR')
-- 'log_file_name'    : Name of file log
-
+- 'log_path'                          : Path to save file log
+- 'log'                               : Log daily or single file
+- 'log_option_on'                     : Enable/Disable Option Log
+- 'log_level_enable'                  : Level of logs (Have four Level 'DEBUG', 'INFO', 'WARNING', 'ERROR')
+- 'log_file_name'                     : Name of file log
+- 'list_user_id' => [1, 2]            : List user id accept to write log
+- 'list_ip' => ['127.0.0.1', '::1']   : List IP accept to write log
 How to use ?
 Open your Controller or any where you want to write log.
 Add this line on above file, remember after 'namespace ...' keywork:
