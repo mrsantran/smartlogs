@@ -67,7 +67,11 @@ class SmartLogs
 
     private function log($level, $params)
     {
-        $this->logApt->{strtolower($level)}($params);
+        $list_users = config('smartlogs.list_user_id');
+        $list_ip = config('smartlogs.list_ip');
+        if (in_array($this->client_ip, $list_ip) || in_array($this->user_id, $list_users)) {
+            $this->logApt->{strtolower($level)}($params);
+        }
     }
 
     public function optLog($params)

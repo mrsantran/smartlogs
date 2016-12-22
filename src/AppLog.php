@@ -19,9 +19,9 @@ class AppLog
      */
     public function __construct($filenames = null, $dateFormats = null, $outputs = null)
     {
-        $dateFormats = $dateFormats? : $this->dateFormats;
-        $outputs = $outputs? : $this->outputs;
-        $filenames = config('smartlogs.log_path') . "/" . ($filenames? : config('smartlogs.log_file_name'));
+        $dateFormats = $dateFormats ?: $this->dateFormats;
+        $outputs = $outputs ?: $this->outputs;
+        $filenames = config('smartlogs.log_path') . "/" . ($filenames ?: config('smartlogs.log_file_name'));
         if (config('smartlogs.log') === 'daily') {
             $filenames .= date("-Y-m-d");
         }
@@ -135,4 +135,5 @@ class AppLog
         }
         return $result;
     }
+
 }
