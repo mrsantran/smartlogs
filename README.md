@@ -38,6 +38,7 @@ Config file 'smartlogs.php' will be copy to config/smartlogs.php, you can change
 - 'log_option_on'                     : Enable/Disable Option Log
 - 'log_level_enable'                  : Level of logs (Have four Level 'DEBUG', 'INFO', 'WARNING', 'ERROR')
 - 'log_file_name'                     : Name of file log
+- 'log_condition' => true,            : Enable Log by user id or client IP
 - 'list_user_id' => [1, 2]            : List user id accept to write log
 - 'list_ip' => ['127.0.0.1', '::1']   : List IP accept to write log
 ```
