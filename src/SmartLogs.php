@@ -71,8 +71,14 @@ class SmartLogs
         if (config("smartlogs.log_condition")) {
             $list_users = config('smartlogs.list_user_id');
             $list_ip = config('smartlogs.list_ip');
-            if (in_array($this->client_ip, $list_ip) || in_array($this->user_id, $list_users)) {
-                $write_log = true;
+            if (!config("smartlogs.log_reverse")) {
+                if (in_array($this->client_ip, $list_ip) || in_array($this->user_id, $list_users)) {
+                    $write_log = true;
+                }
+            } else {
+                if (!in_array($this->client_ip, $list_ip) && !in_array($this->user_id, $list_users)) {
+                    $write_log = true;
+                }
             }
         } else {
             $write_log = true;
