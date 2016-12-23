@@ -41,6 +41,7 @@ Config file 'smartlogs.php' will be copy to config/smartlogs.php, you can change
 - 'log_condition' => true,            : Enable Log by user id or client IP
 - 'list_user_id' => [1, 2]            : List user id accept to write log
 - 'list_ip' => ['127.0.0.1', '::1']   : List IP accept to write log
+- 'log_reverse' => false,             : Reverse condition write lo by user id and client ip
 ```
 How to use ?
 Open your Controller or any where you want to write log.
