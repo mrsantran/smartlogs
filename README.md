@@ -73,5 +73,5 @@ Features:
 - And more...
 
 Any Q/A, Please contact to me.
-Skype: santd86
-Email: santran686@gmail.com
+Email: laptrinhvien2013@gmail.com
+
